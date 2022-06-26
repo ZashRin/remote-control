@@ -1,4 +1,4 @@
-import robot from "robotjs";
+import robot from 'robotjs';
 import Jimp from 'jimp';
 
 export const printScreen = async (

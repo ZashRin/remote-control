@@ -1,5 +1,5 @@
-import { httpServer } from "./http_server";
-import { wsServer, WSS_PORT } from "./ws_server";
+import { httpServer } from './http_server';
+import { wsServer, WSS_PORT } from './ws_server';
 
 const HTTP_PORT = 3000;
 

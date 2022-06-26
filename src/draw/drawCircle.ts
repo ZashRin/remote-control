@@ -1,4 +1,4 @@
-import robot, { mouseToggle } from "robotjs";
+import robot, { mouseToggle } from 'robotjs';
 
 export const drawCircle = (x: number, y: number, radius: number) => {
   mouseToggle('down');
