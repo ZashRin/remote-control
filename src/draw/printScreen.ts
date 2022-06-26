@@ -7,7 +7,7 @@ export const printScreen = async (
   width: number, 
   height: number
   ): Promise<Jimp> => new Promise((resolve) => {
-    const bitmap = robot.screen.capture(x, y, width, height);
+    const bitmap = robot.screen.capture(x - width / 2, y - height / 2, width, height);
     const image = new Jimp(bitmap.width, bitmap.height);
 
     let pos = 0;
