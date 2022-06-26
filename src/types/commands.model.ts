@@ -1,4 +1,5 @@
 export interface Commands {
+  [key: string]: Function,
   mouse_up: (_y: number) => void;
   mouse_down: (_y: number) => void;
   mouse_left: (_x: number) => void;
