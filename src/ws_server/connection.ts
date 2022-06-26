@@ -17,11 +17,12 @@ export const connection = async (ws: WebSocket) => {
         throw new Error(`Command ${command} is incorrect`);
       }
 
-      console.log('<-', command, ...params);
+      process.stdout.write(`<- ${command} ${params}\n`);
       const res = await run[command](x,y);
 
       wss.write(`${command} ${res} \0`);
-      if (res) console.info('->', `${command}: ${res}`);
+      if (res) process.stdout.write(`-> ${command}: ${res}\n`);
+      
     } catch (error) {
       if (error instanceof Error) {
         console.error(error.message);
