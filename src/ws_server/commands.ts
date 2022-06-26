@@ -1,8 +1,8 @@
 import robot from 'robotjs';
-import { drawCircle } from './draw/drawCircle';
-import { drawRectangle } from './draw/drawRectangle';
-import { printScreen } from './draw/printScreen';
-import { Commands } from './types/commands.model';
+import { drawCircle } from '../draw/drawCircle';
+import { drawRectangle } from '../draw/drawRectangle';
+import { printScreen } from '../draw/printScreen';
+import { Commands } from '../types/commands.model';
 
 export const commands = (): Commands => {
   const {x, y} = robot.getMousePos();

@@ -1,5 +1,5 @@
 import { createWebSocketStream, WebSocket } from 'ws';
-import { commands } from '../commands';
+import { commands } from './commands';
 
 export const connection = async (ws: WebSocket) => {
   const wss = createWebSocketStream(ws, { encoding: 'utf-8', decodeStrings: false });
